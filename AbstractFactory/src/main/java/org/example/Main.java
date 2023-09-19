@@ -1,11 +1,12 @@
 package org.example;
 
-import org.example.factories.shoes.GalaClothesFactory;
-import org.example.factories.shoes.SportClothesFactory;
-import org.example.products.shirts.GalaShirt;
-import org.example.products.shirts.SportShirt;
-import org.example.products.shoes.GalaShoe;
-import org.example.products.shoes.SportShoe;
+
+import org.example.factories.GalaClothesFactory;
+import org.example.factories.SportClothesFactory;
+import org.example.products.shirt.GalaShirt;
+import org.example.products.shirt.SportShirt;
+import org.example.products.shoe.GalaShoe;
+import org.example.products.shoe.SportShoe;
 import org.example.products.trousers.GalaTrousers;
 import org.example.products.trousers.SportTrousers;
 
@@ -16,10 +17,10 @@ public class Main {
         ClothesFactory sportClothesFactory = new SportClothesFactory();
 
         SportShirt sportShirt = (SportShirt) sportClothesFactory.createShirt();
-        SportTrousers sportTrousers = (SportTrousers) sportClothesFactory.createTrousers();
         SportShoe sportShoe = (SportShoe) sportClothesFactory.createShoes();
+        SportTrousers sportTrousers = (SportTrousers) sportClothesFactory.createTrousers();
 
-        System.out.println("\n----> Ejemplo ropa deportiva <----");
+        System.out.println("\n---> Ejemplo de ropa deportiva <---");
         sportShirt.hasButtons();
         sportTrousers.getClosureType();
         sportShoe.isRunningShoes();
@@ -31,7 +32,7 @@ public class Main {
         GalaTrousers galaTrousers = (GalaTrousers) galaClothesFactory.createTrousers();
         GalaShoe galaShoe = (GalaShoe) galaClothesFactory.createShoes();
 
-        System.out.println("\n----> Ejemplo ropa de gala <----");
+        System.out.println("\n---> Ejemplo de ropa de gala <---");
         galaShirt.hasButtons();
         galaTrousers.getClosureType();
         galaShoe.isRunningShoes();

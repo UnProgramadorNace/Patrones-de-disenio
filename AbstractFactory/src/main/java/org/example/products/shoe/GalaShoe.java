@@ -1,8 +1,9 @@
-package org.example.products.shoes;
+package org.example.products.shoe;
 
 import org.example.products.Shoe;
 
-public class GalaShoe implements Shoe {
+public class GalaShoe implements Shoe  {
+
     @Override
     public boolean isElegantShoes() {
         System.out.println("Zapatos de gala -- Son zapatos elegantes? -> Si");
@@ -11,7 +12,7 @@ public class GalaShoe implements Shoe {
 
     @Override
     public boolean isRunningShoes() {
-        System.out.println("Zapatos de gala -- Son zapatos elegantes? -> No");
+        System.out.println("Zapatos de gala -- Son zapatos para correr? -> No");
         return false;
     }
 }

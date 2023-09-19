@@ -1,4 +1,4 @@
-package org.example.products.shoes;
+package org.example.products.shoe;
 
 import org.example.products.Shoe;
 
@@ -12,7 +12,7 @@ public class SportShoe implements Shoe {
 
     @Override
     public boolean isRunningShoes() {
-        System.out.println("Zapatos deportivos -- Son zapatos elegantes? -> No");
+        System.out.println("Zapatos deportivos -- Son zapatos para correr? -> Si");
         return true;
     }
 }
